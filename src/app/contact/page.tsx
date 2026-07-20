@@ -131,7 +131,7 @@ export default function ContactPage() {
               <div className="w-12 h-1.5 bg-gold mb-6" />
               <div className="border-2 border-light-gray">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.5!2d-116.3!3d43.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDM2JzAwLjAiTiAxMTbCsDE4JzAwLjAiVw!5e0!3m2!1sen!2sus!4v1"
+                  src="https://maps.google.com/maps?q=8512+West+Elisa+St%2C+Boise%2C+Idaho&t=&z=14&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="450"
                   style={{ border: 0 }}
