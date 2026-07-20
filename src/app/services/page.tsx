@@ -24,13 +24,15 @@ export default function ServicesPage() {
               middle link in the feed commodity supply chain.
             </p>
           </div>
-          <Image
-            src="/services-header.png"
-            alt="Commodities transfer process — truck to silo to distribution"
-            width={320}
-            height={200}
-            className="w-56 md:w-72 h-auto flex-shrink-0 brightness-0 invert opacity-30"
-          />
+          <div className="w-56 md:w-72 h-56 md:h-72 flex-shrink-0 rounded-full bg-white/10 flex items-center justify-center p-8">
+            <Image
+              src="/services-header.png"
+              alt="Commodities transfer process — truck to silo to distribution"
+              width={320}
+              height={200}
+              className="w-full h-auto"
+            />
+          </div>
         </div>
       </section>
 
