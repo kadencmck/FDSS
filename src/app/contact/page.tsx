@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, type FormEvent } from "react";
 
 export default function ContactPage() {
@@ -14,15 +15,24 @@ export default function ContactPage() {
     <>
       {/* Hero */}
       <section className="bg-navy text-white py-16 md:py-20 border-b-4 border-gold">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">
-            CONTACT US
-          </h1>
-          <div className="w-20 h-1.5 bg-rust mb-6" />
-          <p className="text-white/60 text-lg max-w-2xl">
-            Call us, email us, or fill out the form. We respond within one
-            business day.
-          </p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-center md:justify-between gap-10">
+          <div>
+            <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">
+              CONTACT US
+            </h1>
+            <div className="w-20 h-1.5 bg-rust mb-6" />
+            <p className="text-white/60 text-lg max-w-2xl">
+              Call us, email us, or fill out the form. We respond within one
+              business day.
+            </p>
+          </div>
+          <Image
+            src="/map.png"
+            alt="Treasure Valley, Idaho — FDSS service area"
+            width={350}
+            height={300}
+            className="w-64 md:w-80 h-auto flex-shrink-0 rounded-lg border-2 border-white/20"
+          />
         </div>
       </section>
 
