@@ -22,38 +22,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact info strip */}
-      <section className="bg-charcoal text-white border-b-4 border-rust">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-white/10">
-            <div className="py-6 sm:py-8 sm:pr-8">
-              <p className="text-xs font-black tracking-widest text-gold mb-2">PHONE</p>
-              <a
-                href="tel:+14407325083"
-                className="text-xl font-black hover:text-gold transition-colors"
-              >
-                (440) 732-5083
-              </a>
-            </div>
-            <div className="py-6 sm:py-8 sm:px-8">
-              <p className="text-xs font-black tracking-widest text-gold mb-2">EMAIL</p>
-              <a
-                href="mailto:kalen.mckenzie@fdss-llc.com"
-                className="text-sm font-bold hover:text-gold transition-colors break-all"
-              >
-                kalen.mckenzie@fdss-llc.com
-              </a>
-            </div>
-            <div className="py-6 sm:py-8 sm:pl-8">
-              <p className="text-xs font-black tracking-widest text-gold mb-2">LOCATION</p>
-              <p className="text-sm text-white/70">
-                8512 West Elisa St<br />Boise, Idaho
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Main content */}
       <section className="py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
