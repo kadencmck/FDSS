@@ -13,24 +13,15 @@ export default function ServicesPage() {
     <>
       {/* Hero */}
       <section className="bg-navy text-white py-16 md:py-20 border-b-4 border-gold">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-center md:justify-between gap-10">
-          <div>
-            <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">
-              OUR SERVICES
-            </h1>
-            <div className="w-20 h-1.5 bg-rust mb-6" />
-            <p className="text-white/60 text-lg max-w-2xl">
-              From receiving to storage to loadout — we handle the critical
-              middle link in the feed commodity supply chain.
-            </p>
-          </div>
-          <Image
-            src="/services-header-circle.png"
-            alt="Commodities transfer process — truck to silo to distribution"
-            width={300}
-            height={300}
-            className="w-48 md:w-64 h-auto flex-shrink-0"
-          />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">
+            OUR SERVICES
+          </h1>
+          <div className="w-20 h-1.5 bg-rust mb-6" />
+          <p className="text-white/60 text-lg max-w-2xl">
+            From receiving to storage to loadout — we handle the critical
+            middle link in the feed commodity supply chain.
+          </p>
         </div>
       </section>
 
