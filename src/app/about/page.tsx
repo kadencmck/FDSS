@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -133,6 +134,49 @@ export default function AboutPage() {
                 <p className="text-warm-gray leading-relaxed">{item.text}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership */}
+      <section className="py-16 md:py-20 bg-navy text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-black mb-2">
+            LEADERSHIP
+          </h2>
+          <div className="w-16 h-1.5 bg-gold mb-10" />
+
+          <div className="flex flex-col md:flex-row gap-10 md:gap-14 items-start">
+            <div className="flex-shrink-0">
+              <Image
+                src="/kalen-headshot.jpg"
+                alt="Kalen McKenzie"
+                width={280}
+                height={280}
+                className="w-56 md:w-64 h-auto border-4 border-gold"
+              />
+            </div>
+            <div>
+              <h3 className="text-xl font-black tracking-wide mb-1">
+                KALEN MCKENZIE
+              </h3>
+              <p className="text-gold font-bold text-sm tracking-widest mb-5">
+                OWNER &amp; OPERATOR
+              </p>
+              <p className="text-white/60 leading-relaxed mb-4">
+                Kalen brings years of hands-on experience in food services,
+                feedstock operations, and business logistics to FDSS LLC.
+                Idaho raised and rooted in the Treasure Valley, he founded FDSS
+                to deliver a higher standard of service to the region&apos;s
+                dairy and beef cattle operations.
+              </p>
+              <p className="text-white/60 leading-relaxed">
+                His approach is simple: show up on time, deliver what you
+                promise, and treat people right. That&apos;s how he runs FDSS,
+                and that&apos;s what every broker, farmer, and feed buyer can
+                expect when they work with us.
+              </p>
+            </div>
           </div>
         </div>
       </section>
