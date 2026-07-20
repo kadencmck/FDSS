@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -12,15 +13,24 @@ export default function ServicesPage() {
     <>
       {/* Hero */}
       <section className="bg-navy text-white py-16 md:py-20 border-b-4 border-gold">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">
-            OUR SERVICES
-          </h1>
-          <div className="w-20 h-1.5 bg-rust mb-6" />
-          <p className="text-white/60 text-lg max-w-2xl">
-            From receiving to storage to loadout — we handle the critical
-            middle link in the feed commodity supply chain.
-          </p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-center md:justify-between gap-10">
+          <div>
+            <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">
+              OUR SERVICES
+            </h1>
+            <div className="w-20 h-1.5 bg-rust mb-6" />
+            <p className="text-white/60 text-lg max-w-2xl">
+              From receiving to storage to loadout — we handle the critical
+              middle link in the feed commodity supply chain.
+            </p>
+          </div>
+          <Image
+            src="/services-header.png"
+            alt="Commodities transfer process — truck to silo to distribution"
+            width={320}
+            height={200}
+            className="w-56 md:w-72 h-auto flex-shrink-0 brightness-0 invert opacity-30"
+          />
         </div>
       </section>
 
