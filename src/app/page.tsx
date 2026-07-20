@@ -48,12 +48,11 @@ export default function Home() {
       {/* Stats strip — bold numbers, no icons */}
       <section className="bg-rust text-white border-b-4 border-rust-dark">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-white/20">
+          <div className="grid grid-cols-3 divide-x divide-white/20">
             {[
               { value: "10+", label: "YEARS IN FEEDSTOCK" },
               { value: "80+", label: "YEARS COMBINED EXPERIENCE" },
               { value: "100%", label: "IDAHO OWNED & OPERATED" },
-              { value: "24/7", label: "OPERATIONS SUPPORT" },
             ].map((stat) => (
               <div key={stat.label} className="py-6 md:py-8 text-center px-4">
                 <p className="text-3xl md:text-4xl font-black">{stat.value}</p>

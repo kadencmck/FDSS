@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-white text-xl font-black tracking-wide mb-1">
-              FDSS LLC
+              Feedstock Distribution &amp; Supply Solutions LLC
             </h3>
             <p className="text-gold font-bold text-sm mb-4">
               &ldquo;From Field to Feed&rdquo;

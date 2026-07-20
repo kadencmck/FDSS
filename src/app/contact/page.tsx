@@ -1,38 +1,24 @@
-"use client";
+import type { Metadata } from "next";
 
-import Image from "next/image";
-import { useState, type FormEvent } from "react";
+export const metadata: Metadata = {
+  title: "Contact Us | FDSS LLC",
+  description:
+    "Get in touch with FDSS LLC — Feedstock Distribution & Supply Solutions. Boise, Idaho. (440) 732-5083.",
+};
 
 export default function ContactPage() {
-  const [submitted, setSubmitted] = useState(false);
-
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setSubmitted(true);
-  }
-
   return (
     <>
       {/* Hero */}
       <section className="bg-navy text-white py-16 md:py-20 border-b-4 border-gold">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-center md:justify-between gap-10">
-          <div>
-            <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">
-              CONTACT US
-            </h1>
-            <div className="w-20 h-1.5 bg-rust mb-6" />
-            <p className="text-white/60 text-lg max-w-2xl">
-              Call us, email us, or fill out the form. We respond within one
-              business day.
-            </p>
-          </div>
-          <Image
-            src="/map.png"
-            alt="Treasure Valley, Idaho — FDSS service area"
-            width={350}
-            height={300}
-            className="w-64 md:w-80 h-auto flex-shrink-0 rounded-lg border-2 border-white/20"
-          />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">
+            CONTACT US
+          </h1>
+          <div className="w-20 h-1.5 bg-rust mb-6" />
+          <p className="text-white/60 text-lg max-w-2xl">
+            Give us a call or send an email. We respond within one business day.
+          </p>
         </div>
       </section>
 
@@ -68,12 +54,12 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Form section */}
+      {/* Main content */}
       <section className="py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-16">
-            {/* Sidebar */}
-            <div className="md:col-span-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+            {/* Left — info */}
+            <div>
               <h2 className="text-2xl font-black text-charcoal mb-2">
                 GET IN TOUCH
               </h2>
@@ -85,6 +71,34 @@ export default function ContactPage() {
                 just want to know more about what we do — we want to hear
                 from you.
               </p>
+
+              <div className="space-y-5 mb-8">
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 bg-rust mt-2 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-black text-charcoal text-sm tracking-wide">CALL US</h3>
+                    <a href="tel:+14407325083" className="text-rust font-bold hover:text-rust-dark transition-colors">
+                      (440) 732-5083
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 bg-rust mt-2 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-black text-charcoal text-sm tracking-wide">EMAIL US</h3>
+                    <a href="mailto:kalen.mckenzie@fdss-llc.com" className="text-rust font-bold hover:text-rust-dark transition-colors">
+                      kalen.mckenzie@fdss-llc.com
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 bg-rust mt-2 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-black text-charcoal text-sm tracking-wide">VISIT US</h3>
+                    <p className="text-warm-gray">8512 West Elisa St, Boise, Idaho</p>
+                  </div>
+                </div>
+              </div>
 
               <div className="bg-cream border border-light-gray p-6">
                 <h3 className="font-black tracking-widest text-xs text-charcoal mb-4">
@@ -109,129 +123,24 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Form */}
-            <div className="md:col-span-3">
-              {submitted ? (
-                <div className="bg-cream border border-light-gray p-10 text-center">
-                  <h3 className="text-2xl font-black text-charcoal mb-3">
-                    MESSAGE SENT
-                  </h3>
-                  <div className="w-12 h-1.5 bg-gold mx-auto mb-4" />
-                  <p className="text-warm-gray">
-                    Thank you for reaching out. We&apos;ll get back to you
-                    within one business day.
-                  </p>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit}>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
-                    <div>
-                      <label
-                        htmlFor="name"
-                        className="block text-xs font-black tracking-widest text-charcoal mb-2"
-                      >
-                        NAME *
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                        className="w-full px-4 py-3 border-2 border-light-gray bg-white focus:border-navy focus:outline-none text-sm"
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor="company"
-                        className="block text-xs font-black tracking-widest text-charcoal mb-2"
-                      >
-                        COMPANY
-                      </label>
-                      <input
-                        type="text"
-                        id="company"
-                        name="company"
-                        className="w-full px-4 py-3 border-2 border-light-gray bg-white focus:border-navy focus:outline-none text-sm"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
-                    <div>
-                      <label
-                        htmlFor="email"
-                        className="block text-xs font-black tracking-widest text-charcoal mb-2"
-                      >
-                        EMAIL *
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                        className="w-full px-4 py-3 border-2 border-light-gray bg-white focus:border-navy focus:outline-none text-sm"
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor="phone"
-                        className="block text-xs font-black tracking-widest text-charcoal mb-2"
-                      >
-                        PHONE
-                      </label>
-                      <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        className="w-full px-4 py-3 border-2 border-light-gray bg-white focus:border-navy focus:outline-none text-sm"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="mb-5">
-                    <label
-                      htmlFor="inquiry"
-                      className="block text-xs font-black tracking-widest text-charcoal mb-2"
-                    >
-                      TYPE OF INQUIRY
-                    </label>
-                    <select
-                      id="inquiry"
-                      name="inquiry"
-                      className="w-full px-4 py-3 border-2 border-light-gray bg-white focus:border-navy focus:outline-none text-sm"
-                    >
-                      <option value="">Select one...</option>
-                      <option value="quote">Request a Quote</option>
-                      <option value="broker">Broker Partnership</option>
-                      <option value="supply">Feed Supply Inquiry</option>
-                      <option value="general">General Question</option>
-                    </select>
-                  </div>
-
-                  <div className="mb-8">
-                    <label
-                      htmlFor="message"
-                      className="block text-xs font-black tracking-widest text-charcoal mb-2"
-                    >
-                      MESSAGE *
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      required
-                      rows={6}
-                      className="w-full px-4 py-3 border-2 border-light-gray bg-white focus:border-navy focus:outline-none text-sm resize-vertical"
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="bg-rust hover:bg-rust-dark text-white font-black tracking-widest text-sm px-10 py-4 transition-colors cursor-pointer"
-                  >
-                    SEND MESSAGE
-                  </button>
-                </form>
-              )}
+            {/* Right — Google Maps */}
+            <div>
+              <h2 className="text-2xl font-black text-charcoal mb-2">
+                OUR LOCATION
+              </h2>
+              <div className="w-12 h-1.5 bg-gold mb-6" />
+              <div className="border-2 border-light-gray">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.5!2d-116.3!3d43.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDM2JzAwLjAiTiAxMTbCsDE4JzAwLjAiVw!5e0!3m2!1sen!2sus!4v1"
+                  width="100%"
+                  height="450"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="FDSS LLC Location — Boise, Idaho"
+                />
+              </div>
             </div>
           </div>
         </div>
