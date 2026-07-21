@@ -6,13 +6,13 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "FDSS LLC | Feedstock Distribution & Supply Solutions",
   description:
-    "Dependable commodities transfer and feedstock distribution for dairy and beef cattle operations in the Boise, Idaho area. Cottonseed, canola, soybean husk, and more. From Field to Feed.",
+    "Commodities transload station for dairy and beef cattle feed. Cottonseed, canola, soybean hulls, soybean meal, and more. Boise, Idaho. Where the rail line meets the feed bunk.",
   keywords:
-    "feedstock distribution, commodities transfer, dairy cattle feed, beef cattle feed, cottonseed, canola, soybean, Boise Idaho, feed supply",
+    "feedstock distribution, commodities transload, dairy cattle feed, beef cattle feed, cottonseed, canola, soybean hulls, soybean meal, Boise Idaho, feed supply",
   openGraph: {
     title: "FDSS LLC | Feedstock Distribution & Supply Solutions",
     description:
-      "Dependable commodities transfer and feedstock distribution for dairy and beef cattle operations in the Boise, Idaho area. From Field to Feed.",
+      "Commodities transload station for dairy and beef cattle feed. Boise, Idaho. Where the rail line meets the feed bunk.",
     url: "https://fdssllc.com",
     siteName: "FDSS LLC",
     images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FDSS LLC | Feedstock Distribution & Supply Solutions",
     description:
-      "Dependable commodities transfer and feedstock distribution for dairy and beef cattle. Boise, Idaho.",
+      "Commodities transload station for dairy and beef cattle feed. Boise, Idaho.",
     images: ["https://fdssllc.com/og-image.png"],
   },
   icons: {

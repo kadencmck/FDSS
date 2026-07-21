@@ -12,7 +12,7 @@ export default function Footer() {
               Feedstock Distribution &amp; Supply Solutions LLC
             </h3>
             <p className="text-gold font-bold text-sm mb-4">
-              &ldquo;From Field to Feed&rdquo;
+              &ldquo;Where the rail line meets the feed bunk&rdquo;
             </p>
             <p className="text-sm leading-relaxed">
               Feedstock distribution and commodities transfer for dairy and beef

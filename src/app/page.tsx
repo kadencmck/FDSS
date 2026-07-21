@@ -12,20 +12,19 @@ export default function Home() {
         <div className="absolute inset-0 bg-navy/80" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tight mb-6">
-              FEEDSTOCK
-              <br />
-              DISTRIBUTION &amp;
-              <br />
-              <span className="text-gold">SUPPLY SOLUTIONS</span>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight mb-6">
+              FDSS
             </h1>
+            <p className="text-sm tracking-widest text-white/40 font-bold mb-6">
+              FEEDSTOCK DISTRIBUTION &amp; SUPPLY SOLUTIONS
+            </p>
             <div className="w-20 h-1.5 bg-rust mb-6" />
             <p className="text-lg md:text-xl text-white/70 mb-2 max-w-xl leading-relaxed">
-              Commodities transfer station for dairy and beef cattle feed.
-              Cottonseed, canola, soybean husk, soybean mill, and more.
+              Commodities transload station for dairy and beef cattle feed.
+              Cottonseed, canola, soybean hulls, soybean meal, and more.
             </p>
             <p className="text-gold font-bold text-lg mb-10">
-              &ldquo;From Field to Feed&rdquo;
+              &ldquo;Where the rail line meets the feed bunk&rdquo;
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
@@ -45,12 +44,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats strip — bold numbers, no icons */}
+      {/* Stats strip */}
       <section className="bg-rust text-white border-b-4 border-rust-dark">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-3 divide-x divide-white/20">
             {[
-              { value: "10+", label: "YEARS IN FEEDSTOCK" },
+              { value: "10+", label: "YEARS IN LOGISTICS" },
               { value: "80+", label: "YEARS COMBINED EXPERIENCE" },
               { value: "100%", label: "IDAHO OWNED & OPERATED" },
             ].map((stat) => (
@@ -65,7 +64,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* What we do — dense, no cards */}
+      {/* What we do — 3 services, no logistics */}
       <section className="py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-2">
@@ -73,30 +72,26 @@ export default function Home() {
           </h2>
           <div className="w-16 h-1.5 bg-gold mb-10" />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border border-light-gray">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-light-gray">
             {[
               {
-                title: "COMMODITIES TRANSFER",
-                text: "We receive bulk feedstock from producers and brokers and coordinate efficient transfer to dairy and beef operations. High-capacity receiving, quick turnaround, no wasted time.",
+                title: "COMMODITIES RECEIVING",
+                text: "Bulk grain, byproducts, and cottonseed in from commodity brokers — coordinated and moved fast to dairy and beef operations. High-capacity receiving. No wasted time.",
               },
               {
-                title: "FEEDSTOCK DISTRIBUTION",
-                text: "We work directly with major commodities brokers to distribute cottonseed, canola, soybean husk, soybean mill, and other feed products across the Treasure Valley.",
+                title: "DISTRIBUTION",
+                text: "Cottonseed, canola, soybean hulls, soybean meal, and other feed commodities — moved across the Treasure Valley for the brokers we work with every day.",
               },
               {
                 title: "STORAGE & HANDLING",
-                text: "Proper storage protects product quality. Our facilities maintain commodity condition from receiving through loadout. Segregated storage, first-in first-out rotation.",
-              },
-              {
-                title: "LOGISTICS COORDINATION",
-                text: "Getting the right product to the right place on time takes coordination. We work with brokers, haulers, and end users to keep the supply chain predictable.",
+                text: "Segregated storage. First-in, first-out rotation. Product condition protected from receiving through loadout.",
               },
             ].map((item, i) => (
               <div
                 key={item.title}
                 className={`p-8 md:p-10 ${
-                  i < 2 ? "border-b border-light-gray" : ""
-                } ${i % 2 === 0 ? "md:border-r border-light-gray" : ""}`}
+                  i < 2 ? "md:border-r border-light-gray" : ""
+                }`}
               >
                 <h3 className="text-lg font-black text-charcoal tracking-wide mb-3">
                   {item.title}
@@ -117,67 +112,57 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why FDSS — two column, dense */}
+      {/* Why FDSS — new client copy */}
       <section className="py-16 md:py-20 bg-cream border-t-4 border-light-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-2">
-                WHY FDSS
-              </h2>
-              <div className="w-16 h-1.5 bg-gold mb-8" />
+          <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-2">
+            WHY FDSS
+          </h2>
+          <div className="w-16 h-1.5 bg-gold mb-8" />
 
-              <p className="text-warm-gray leading-relaxed mb-5 text-[15px]">
-                Too many operations deal with missed deliveries, inconsistent
-                quality, and brokers who don&apos;t return calls. We started
-                FDSS because the feed industry deserves better than that.
-              </p>
-              <p className="text-warm-gray leading-relaxed mb-5 text-[15px]">
-                We&apos;re Idaho locals with deep roots in agriculture and
-                logistics. When your cattle need feed, there&apos;s no room
-                for excuses. We show up, we deliver, we get it done.
-              </p>
-              <p className="text-warm-gray leading-relaxed text-[15px]">
-                Our owners bring over 80 years of combined experience in
-                business and logistics, including 10+ years specifically in
-                food and feedstock services. This isn&apos;t our first rodeo.
-              </p>
-            </div>
+          <p className="text-warm-gray leading-relaxed mb-10 text-[15px] max-w-3xl">
+            Brokers don&apos;t need another vendor — they need a transload
+            partner who doesn&apos;t create problems. That&apos;s the job we
+            hold ourselves to.
+          </p>
 
-            <div className="bg-navy text-white p-8 md:p-10">
-              <h3 className="font-black tracking-widest text-sm mb-6 text-gold">
-                OUR COMMITMENT
-              </h3>
-              {[
-                {
-                  title: "DEPENDABLE",
-                  desc: "On time, every time. We show up when we say we will and deliver what we promise.",
-                },
-                {
-                  title: "PREDICTABLE",
-                  desc: "No surprises on pricing or scheduling. You know what you're getting before the truck rolls.",
-                },
-                {
-                  title: "FAIR",
-                  desc: "Honest pricing, straight talk. We earn your business every single load.",
-                },
-              ].map((item, i) => (
-                <div
-                  key={item.title}
-                  className={`py-5 ${
-                    i < 2 ? "border-b border-white/10" : ""
-                  }`}
-                >
-                  <h4 className="font-black text-white tracking-wide text-sm mb-1">
-                    {item.title}
-                  </h4>
-                  <p className="text-white/60 text-sm leading-relaxed">
-                    {item.desc}
-                  </p>
-                </div>
-              ))}
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border border-light-gray bg-white">
+            {[
+              {
+                title: "WE MOVE FAST",
+                text: "High-capacity receiving and quick turnaround mean your loads don't sit, your trucks don't wait, and your deals don't stall on the logistics end.",
+              },
+              {
+                title: "WE KEEP IT CLEAN",
+                text: "Segregated storage and first-in, first-out rotation mean the product that leaves is the same quality as what came in — no surprises for your buyers.",
+              },
+              {
+                title: "WE COMMUNICATE",
+                text: "You'll know where your load stands without having to chase us for it. Predictable coordination between us, your haulers, and your end users.",
+              },
+              {
+                title: "WE KNOW THE VALLEY",
+                text: "Established relationships with dairy and beef operations across the Treasure Valley mean your commodities land where they need to, on schedule.",
+              },
+            ].map((item, i) => (
+              <div
+                key={item.title}
+                className={`p-8 md:p-10 ${
+                  i < 2 ? "border-b border-light-gray" : ""
+                } ${i % 2 === 0 ? "md:border-r border-light-gray" : ""}`}
+              >
+                <h3 className="text-sm font-black text-rust tracking-widest mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-warm-gray leading-relaxed">{item.text}</p>
+              </div>
+            ))}
           </div>
+
+          <p className="text-warm-gray leading-relaxed mt-8 text-[15px] max-w-3xl italic">
+            At the end of the day, our job is to make the transfer invisible —
+            so you can focus on the deal, not the details.
+          </p>
         </div>
       </section>
 
@@ -191,10 +176,10 @@ export default function Home() {
             {[
               "Cottonseed",
               "Canola Meal",
-              "Soybean Husk",
-              "Soybean Mill",
+              "Soybean Hulls",
+              "Soybean Meal",
               "Distillers Grains",
-              "Other Bulk Feed Commodities",
+              "Bulk Grain & Byproducts",
             ].map((item) => (
               <span
                 key={item}
@@ -215,7 +200,7 @@ export default function Home() {
               Ready to work with us?
             </h2>
             <p className="text-white/70">
-              Call us directly or send a message. We respond within one business day.
+              Call us directly or send an email. We respond within one business day.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

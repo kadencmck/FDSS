@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Us | FDSS LLC",
+  title: "About | FDSS",
   description:
-    "FDSS LLC is Idaho-owned and operated. 80+ years combined experience in business and logistics. 10+ years in food and feedstock services.",
+    "FDSS is Idaho-owned and operated. 80+ years combined experience in business and logistics. 10+ years in logistics and transload operations.",
 };
 
 export default function AboutPage() {
@@ -15,12 +15,12 @@ export default function AboutPage() {
       <section className="bg-navy text-white py-16 md:py-20 border-b-4 border-gold">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">
-            ABOUT FDSS LLC
+            ABOUT FDSS
           </h1>
           <div className="w-20 h-1.5 bg-rust mb-6" />
           <p className="text-white/60 text-lg max-w-2xl">
             Idaho owned and operated. Built on decades of hands-on experience
-            in logistics, business, and feedstock services.
+            in logistics, business, and transload operations.
           </p>
         </div>
       </section>
@@ -36,30 +36,24 @@ export default function AboutPage() {
               <div className="w-16 h-1.5 bg-gold mb-8" />
 
               <p className="text-warm-gray leading-relaxed mb-5">
-                FDSS LLC is a commodities transfer station serving dairy and
-                beef cattle operations in the Boise, Idaho area. We handle the
+                FDSS is a commodities transload station serving dairy and beef
+                cattle operations in the Boise, Idaho area. We handle the
                 critical middle link in the feed supply chain — receiving bulk
-                feedstock from producers and brokers, storing it properly, and
-                getting it where it needs to go on time.
+                commodities from brokers, storing them properly, and getting
+                them where they need to go on time.
               </p>
               <p className="text-warm-gray leading-relaxed mb-5">
-                We specialize in cottonseed, canola, soybean husk, soybean mill,
-                distillers grains, and other bulk feed commodities. Our operation
-                is built for efficiency — quick turnaround, minimal downtime,
-                and consistent quality from receiving through loadout.
+                We specialize in cottonseed, canola, soybean hulls, soybean
+                meal, distillers grains, and other bulk feed commodities. Our
+                operation is built for efficiency — quick turnaround, minimal
+                downtime, and consistent quality from receiving through loadout.
               </p>
               <p className="text-warm-gray leading-relaxed mb-5">
                 FDSS is owned and operated by people who grew up in Idaho, built
-                careers in logistics and food services, and know this industry
-                from the ground up. We&apos;re not a corporate outfit running
-                things from an office somewhere else. We&apos;re here, we&apos;re
-                local, and we answer the phone.
-              </p>
-              <p className="text-warm-gray leading-relaxed">
-                We started this company because we saw an opportunity to bring a
-                higher standard of service to feedstock distribution in the
-                Treasure Valley. Dependable, predictable, and fair. That&apos;s
-                the standard we hold ourselves to on every load.
+                careers across multiple industries, and know operations from the
+                ground up. We&apos;re not a corporate outfit running things from
+                an office somewhere else. We&apos;re here, we&apos;re local,
+                and we answer the phone.
               </p>
             </div>
 
@@ -79,7 +73,7 @@ export default function AboutPage() {
                   <div className="border-b border-white/10 pb-6">
                     <p className="text-4xl font-black text-gold">10+</p>
                     <p className="text-sm text-white/60 tracking-wide font-bold mt-1">
-                      YEARS IN FOOD &amp; FEEDSTOCK SERVICES
+                      YEARS IN LOGISTICS
                     </p>
                   </div>
                   <div>
@@ -95,45 +89,31 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Values — horizontal blocks, not cards */}
+      {/* How We Operate — new client copy */}
       <section className="py-16 md:py-20 bg-cream border-t-4 border-light-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-black text-charcoal mb-2">
             HOW WE OPERATE
           </h2>
-          <div className="w-16 h-1.5 bg-gold mb-10" />
+          <div className="w-16 h-1.5 bg-gold mb-8" />
 
-          <div className="space-y-0 border border-light-gray bg-white">
-            {[
-              {
-                title: "DEPENDABILITY",
-                text: "In this industry, a missed delivery means real consequences for livestock operations. We treat every commitment like it matters — because it does. When we say a load will be there, it will be there.",
-              },
-              {
-                title: "HONESTY",
-                text: "Straight talk and fair pricing. No games, no hidden fees, no runaround. We believe the best business relationships are built on trust, and trust starts with telling you exactly what to expect.",
-              },
-              {
-                title: "EFFICIENCY",
-                text: "Time is money in commodities. Our operations minimize turnaround time and keep your supply chain moving. We don't waste your time and we don't waste ours.",
-              },
-              {
-                title: "LOCAL ROOTS",
-                text: "We're Idaho raised. We know the land, the people, and the industry here. When you work with FDSS, you're working with your neighbors — not some outfit calling in from out of state.",
-              },
-            ].map((item, i, arr) => (
-              <div
-                key={item.title}
-                className={`flex flex-col md:flex-row md:items-start gap-4 md:gap-8 p-6 md:p-8 ${
-                  i < arr.length - 1 ? "border-b border-light-gray" : ""
-                }`}
-              >
-                <h3 className="text-sm font-black tracking-widest text-rust md:w-48 md:flex-shrink-0 md:pt-0.5">
-                  {item.title}
-                </h3>
-                <p className="text-warm-gray leading-relaxed">{item.text}</p>
-              </div>
-            ))}
+          <div className="max-w-3xl">
+            <p className="text-charcoal font-bold text-lg leading-relaxed mb-6">
+              FDSS is the bridge between broker and buyer — and we&apos;re
+              always building it better.
+            </p>
+            <p className="text-warm-gray leading-relaxed mb-5">
+              We don&apos;t just move product through the station. We look for
+              every way to close the gap between a broker&apos;s sale and a
+              buyer&apos;s delivery — faster, cleaner, and more reliable with
+              every load.
+            </p>
+            <p className="text-warm-gray leading-relaxed">
+              Just because it works today doesn&apos;t mean it&apos;s the best
+              way. The market&apos;s needs of tomorrow won&apos;t be the same as
+              today&apos;s, and we&apos;re constantly looking for the solutions
+              the future will require.
+            </p>
           </div>
         </div>
       </section>
@@ -164,11 +144,10 @@ export default function AboutPage() {
                 OWNER &amp; OPERATOR
               </p>
               <p className="text-white/60 leading-relaxed mb-4">
-                Kalen brings years of hands-on experience in food services,
-                feedstock operations, and business logistics to FDSS LLC.
-                Idaho raised and rooted in the Treasure Valley, he founded FDSS
-                to deliver a higher standard of service to the region&apos;s
-                dairy and beef cattle operations.
+                Kalen has built and led companies in construction, trucking,
+                food processing technology, and industrial manufacturing —
+                bringing that operational range to how FDSS runs its transload
+                station.
               </p>
               <p className="text-white/60 leading-relaxed">
                 His approach is simple: show up on time, deliver what you

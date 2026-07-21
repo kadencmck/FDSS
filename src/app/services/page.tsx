@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Services | FDSS LLC",
   description:
-    "Commodities transfer, feedstock distribution, storage, and logistics for dairy and beef cattle feed. Cottonseed, canola, soybean husk, soybean mill, and more.",
+    "Commodities receiving, distribution, storage, and handling for dairy and beef cattle feed. Cottonseed, canola, soybean hulls, soybean meal, and more.",
 };
 
 export default function ServicesPage() {
@@ -30,9 +30,9 @@ export default function ServicesPage() {
         {[
           {
             num: "01",
-            title: "COMMODITIES TRANSFER",
+            title: "COMMODITIES RECEIVING",
             description:
-              "Our core operation. We receive bulk feedstock commodities from producers and brokers, then coordinate efficient transfer to end users — dairy and beef cattle operations across the Treasure Valley and surrounding areas.",
+              "Bulk grain, byproducts, and cottonseed in from commodity brokers — coordinated and moved fast to dairy and beef operations. High-capacity receiving. No wasted time.",
             details:
               "Our facility is set up for high-volume throughput with minimal turnaround time. Trucks get in, get loaded, and get back on the road. We coordinate scheduling between brokers and haulers to keep things moving and eliminate bottlenecks.",
             capabilities: [
@@ -44,9 +44,9 @@ export default function ServicesPage() {
           },
           {
             num: "02",
-            title: "FEEDSTOCK DISTRIBUTION",
+            title: "DISTRIBUTION",
             description:
-              "We work directly with major commodities brokers to distribute feed products to the operations that need them. Consistent supply, reliable scheduling, and communication you can count on.",
+              "Cottonseed, canola, soybean hulls, soybean meal, and other feed commodities — moved across the Treasure Valley for the brokers we work with every day.",
             details:
               "Our distribution network covers the Treasure Valley and surrounding agricultural regions. We maintain relationships with brokers and producers to ensure steady product availability, even during peak demand periods.",
             capabilities: [
@@ -60,7 +60,7 @@ export default function ServicesPage() {
             num: "03",
             title: "STORAGE & HANDLING",
             description:
-              "Proper storage means protected product quality. Our facilities keep commodities in optimal condition from receiving through loadout. No product degradation, no cross-contamination, no surprises.",
+              "Segregated storage. First-in, first-out rotation. Product condition protected from receiving through loadout.",
             details:
               "We maintain segregated storage for different commodity types, operate on a first-in first-out rotation to ensure freshness, and monitor conditions to protect product integrity. When it leaves our facility, it's in the same condition it arrived.",
             capabilities: [
@@ -68,20 +68,6 @@ export default function ServicesPage() {
               "Commodity segregation by type",
               "Inventory management and tracking",
               "First-in, first-out rotation",
-            ],
-          },
-          {
-            num: "04",
-            title: "LOGISTICS COORDINATION",
-            description:
-              "Getting the right product to the right place at the right time takes coordination. We manage the communication between all parties to keep the supply chain running without hiccups.",
-            details:
-              "We handle scheduling, dispatch coordination, and real-time communication between brokers, haulers, and end users. When plans change — and they always do — we adapt and keep everyone informed.",
-            capabilities: [
-              "Scheduling and dispatch coordination",
-              "Broker and hauler communication",
-              "Supply chain visibility for all parties",
-              "On-time delivery tracking",
             ],
           },
         ].map((service, i) => (
@@ -154,11 +140,11 @@ export default function ServicesPage() {
                 desc: "Quality protein supplement for dairy and beef cattle with consistent amino acid profiles.",
               },
               {
-                name: "SOYBEAN HUSK",
+                name: "SOYBEAN HULLS",
                 desc: "Excellent source of digestible fiber for ruminants, supporting healthy rumen function.",
               },
               {
-                name: "SOYBEAN MILL",
+                name: "SOYBEAN MEAL",
                 desc: "High-protein soybean meal for balanced dairy and beef cattle nutrition programs.",
               },
               {
