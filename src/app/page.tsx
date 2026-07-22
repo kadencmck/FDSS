@@ -16,7 +16,7 @@ export default function Home() {
               FDSS
             </h1>
             <p className="text-sm tracking-widest text-white/40 font-bold mb-6">
-              FEEDSTOCK DISTRIBUTION &amp; SUPPLY SOLUTIONS
+              RAIL-TO-TRUCK COMMODITIES TRANSLOADING
             </p>
             <div className="w-20 h-1.5 bg-rust mb-6" />
             <p className="text-lg md:text-xl text-white/70 mb-2 max-w-xl leading-relaxed">
