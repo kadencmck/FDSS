@@ -63,7 +63,7 @@ export default function ContactPage() {
                   <div className="w-2 h-2 bg-rust mt-2 flex-shrink-0" />
                   <div>
                     <h3 className="font-black text-charcoal text-sm tracking-wide">VISIT US</h3>
-                    <p className="text-warm-gray">8512 West Elisa St, Boise, Idaho</p>
+                    <p className="text-warm-gray">5828 W Elisa St, Boise, ID 83709</p>
                   </div>
                 </div>
               </div>
@@ -99,7 +99,7 @@ export default function ContactPage() {
               <div className="w-12 h-1.5 bg-gold mb-6" />
               <div className="border-2 border-light-gray">
                 <iframe
-                  src="https://maps.google.com/maps?q=8512+West+Elisa+St%2C+Boise%2C+Idaho&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=5828+W+Elisa+St%2C+Boise%2C+ID+83709&t=&z=14&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="450"
                   style={{ border: 0 }}
