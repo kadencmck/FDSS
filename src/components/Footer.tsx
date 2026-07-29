@@ -50,7 +50,7 @@ export default function Footer() {
               CONTACT
             </h3>
             <ul className="space-y-2 text-sm">
-              <li>5828 W Elisa St, Boise, ID 83709</li>
+              <li>8528 W Elisa St, Boise, ID 83709</li>
               <li>
                 <a href="tel:+14407325083" className="text-gold hover:text-white font-bold transition-colors">
                   (440) 732-5083
